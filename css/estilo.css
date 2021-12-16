@@ -1,0 +1,274 @@
+@font-face {
+     font-family: 'titulo';
+     src: url(../fonts/LazenbyCompLiquid.ttf);
+}
+
+@font-face {
+     font-family: 'texto';
+     src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+html{
+     scroll-behavior: smooth;
+}
+
+/*************** Container *****************/
+
+#container{
+     background-color: black;
+}
+
+/*************** BODY *******************/
+
+body {
+     margin: 0;
+     background-color: black;
+}
+
+/************** NAV *******************/
+
+.topnav {
+     overflow: hidden;
+     background-color: #333;
+     font-family: 'titulo';
+     position: sticky;
+     
+}
+
+.topnav a {
+     float: left;
+     display: block;
+     color: #34dddd;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 1.4em;
+}
+
+.topnav a:hover {
+     background-color: rgb(223, 164, 4);
+     color: black;
+}
+
+.topnav .icon {
+     display: none;
+}
+
+@media screen and (max-width: 600px) {
+     .topnav a:not(:first-child) {display: none;}
+     .topnav a.icon {
+     float: right;
+     display: block;
+     }
+}
+
+@media screen and (max-width: 600px) {
+     .topnav.responsive {position: relative;}
+     .topnav.responsive .icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+     }
+     .topnav.responsive a {
+     float: none;
+     display: block;
+     text-align: left;
+     }
+}
+
+/*************** HERO ***************/
+
+#hero{
+     background-image: url(../img/hero.jpg);
+     height: 95vh;
+     background-size: cover;
+     background-position: 66%;
+     border-bottom: 3px solid rgb(223, 164, 4);
+}
+
+#hero h1{
+     color: #34dddd;
+     font-family: 'titulo';
+     font-size: 2.8em;
+     position: absolute;
+     bottom: 50px;
+     left: 50px;
+     background-color: black;
+     box-shadow: 10px -11px 25px 1px rgb(223, 164, 4);
+     padding: 15px;
+     border-radius: 20px;
+}
+
+/************ INTRODUCTION ************/
+
+#introduction{
+     width: 60%;
+     margin: 120px auto;
+}
+
+#introduction h1{
+     font-family: 'titulo';
+     font-size: 2em;
+     background-color: black;
+     padding: 20px;
+     box-shadow: -9px 9px 20px rgb(223, 164, 4);
+     width: 50%;
+     border-radius: 20px;
+     color: #34dddd;
+     text-align: center;
+     display: block;
+     margin: auto;
+}
+
+#introduction p{
+     color: #34dddd;
+     font-family: 'texto';
+     font-size: 1.4em;
+     text-align: justify;
+}
+
+#texto{
+margin-top: 70px;
+}
+
+#texto p::first-letter{
+     color: rgb(223, 164, 4);
+     font-size: 1.8em;
+}
+
+#introduction img{
+     margin-top: 100px;
+     width: 50%;
+     float: right;
+     padding-left: 30px;
+     padding-bottom: 30px;
+}
+
+/*********** PROTOTYPES ***********/
+
+#prototypes{
+     width: 70%;
+     margin: auto;
+}
+
+#prototypes h1{
+     font-family: 'titulo';
+     font-size: 2em;
+     background-color: black;
+     padding: 20px;
+     box-shadow: -9px 9px 20px rgb(223, 164, 4);
+     width: 50%;
+     border-radius: 20px;
+     color: #34dddd;
+     text-align: center;
+     display: block;
+     margin: auto;
+}
+
+#texto1{
+     margin-top: 50px;
+}
+
+#texto1 p::first-letter{
+     color: rgb(223, 164, 4);
+     font-size: 1.8em;
+}
+
+#prototypes p{
+     color: #34dddd;
+     font-family: 'texto';
+     font-size: 1.4em;
+     text-align: justify;
+}
+
+.tres{
+     width: 29.3%;
+     float: left;
+     margin: 2%;
+     box-sizing: border-box;
+     background-color: black;
+     box-shadow: -2px 3px 20px rgb(223, 164, 4),
+          2px -2px 25px 1px rgb(223, 164, 4);
+}
+
+#cards h2{
+     font-family: 'titulo';
+     color: #34dddd;
+     text-align: center;
+     padding-bottom: 40px;
+     font-size: 1.8em;
+}
+
+#cards button{
+     background-color: #34dddd ;
+     display: block;
+     margin: 25px auto;
+     padding: 8px;
+}
+
+#prototypes img{
+     width: 90%;
+     display: block;
+     margin: auto;
+}
+
+.fin{
+     clear: both;
+     margin-bottom: 65px;
+}
+
+/*********** FOOTER ************/
+
+footer {
+     background-color: black;
+     box-shadow: -2px 3px 20px rgb(223, 164, 4),
+     2px -2px 25px 1px rgb(223, 164, 4);
+     width: 70%;
+     margin: auto;
+     text-align: center;
+     color: #34dddd;
+     font-family: 'texto';
+     font-size: 1.1em ;
+     padding: 10px;
+     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+
+     #introduction{
+          width: 90%;
+     }
+
+     #prototypes{
+          width: 90%;
+     }
+
+     .tres{
+          width: 46%;
+          margin: 2%;
+     }
+
+     footer{
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 600px) {
+
+     #introduction img{
+          width: 100%;
+     }
+
+     #introduction h1{
+          width: 80%;
+     }
+
+     #prototypes h1{
+          width: 80%;
+     }
+
+     .tres{
+          width: 100%;
+          margin-bottom: 45px;
+     }
+}
